@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/batchdb?serverTimezone=Asia/Seoul
+    username: jaewoo
+    password: qkrwodn00!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  batch:
+    job:
+      enabled: false
+    jdbc:
+      initialize-schema: always
+
+logging:
+  level:
+    org.springframework.batch.core: DEBUG
